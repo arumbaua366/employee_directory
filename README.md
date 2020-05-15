@@ -1,5 +1,5 @@
 # Project Title
-* WorkedIn
+* Employee Directory
 
 ## Tech Used
 * Javascript

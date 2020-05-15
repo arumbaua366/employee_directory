@@ -12,13 +12,13 @@ class App extends Component {
   };
 
   filterEmployees = employmentlength => {
-    const employees = this.state.employees.filter(employee => employee.employmentlength >= 50)
+    const employees = this.state.employees.filter(employee => employee.employmentlength >= 4)
     console.log(employees)
     this.setState({ employees });
   };
 
   sortEmployees = employmentlength => {
-    const employees = this.state.employees.sort((a, b) => b.coolness - a.coolness)
+    const employees = this.state.employees.sort((a, b) => b.employmentlength - a.employmentlength)
 
     this.setState({ employees });
   };
@@ -34,11 +34,14 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Reynholm Industries Employee Directory</Title>
+        <Title>Reynholm Industries Employee Directory
 
         <FilterEmployee 
         filterEmployee={this.filterEmployees}
         sortEmployee={this.sortEmployees} />
+
+        </Title>
+
 
         {this.state.employees.map(employee => (
           <EmployeeCard

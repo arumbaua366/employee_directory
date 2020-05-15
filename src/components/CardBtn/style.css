@@ -12,6 +12,11 @@
   outline: none;
 }
 
+.menu {
+  margin: 20px;
+  font-size: 18px;
+}
+
 .pass {
   left: 1%;
   background: #E53935;
