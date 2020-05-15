@@ -34,7 +34,7 @@
     {
       "id": 5,
       "name": "Douglas Reynholm",
-      "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
+      "image": "https://vignette.wikia.nocookie.net/theitcrowd/images/2/27/Douglas_series_four_publicity_photo.jpg/revision/latest/scale-to-width-down/250?cb=20100615155347",
       "title": "Head of Reynholm Industries",
       "department": "N/A",
       "employmentlength": "1"
@@ -67,7 +67,7 @@
       "id": 9,
       "name": "Mr. Yamamoto",
       "image": "https://vignette.wikia.nocookie.net/theitcrowd/images/3/3c/Yamamoto1.png/revision/latest/scale-to-width-down/250?cb=20100625100803",
-      "title": "CEO of Yamamoto Corporation - Reynholm Industries shareholder",
+      "title": "Business Partner (Yamamoto Corp.)",
       "department": "N/A",
       "employmentlength": "27"
     },
@@ -94,6 +94,14 @@
       "title": "Psychiatrist",
       "department": "Administration",
       "employmentlength": "12"
+    },
+    {
+      "id": 13,
+      "name": "Denholm Reynholm",
+      "image": "https://vignette.wikia.nocookie.net/theitcrowd/images/0/0b/Denholm_declares_war.jpg/revision/latest/scale-to-width-down/250?cb=20100425163116",
+      "title": "Head of Reynholm Industries",
+      "department": "N/A",
+      "employmentlength": "20"
     }
   ]
   
