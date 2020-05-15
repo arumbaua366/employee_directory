@@ -3,11 +3,24 @@ import EmployeeCard from "./components/EmployeeCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import employees from "./employees.json";
+import FilterEmployee from "./components/CardBtn/filterEmployee";
 
 class App extends Component {
   // Setting this.state.employees to the employees json array
   state = {
     employees
+  };
+
+  filterEmployees = employmentlength => {
+    const employees = this.state.employees.filter(employee => employee.employmentlength >= 50)
+    console.log(employees)
+    this.setState({ employees });
+  };
+
+  sortEmployees = employmentlength => {
+    const employees = this.state.employees.sort((a, b) => b.coolness - a.coolness)
+
+    this.setState({ employees });
   };
 
   removeEmployee = id => {
@@ -21,7 +34,12 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Employee Directory</Title>
+        <Title>Reynholm Industries Employee Directory</Title>
+
+        <FilterEmployee 
+        filterEmployee={this.filterEmployees}
+        sortEmployee={this.sortEmployees} />
+
         {this.state.employees.map(employee => (
           <EmployeeCard
             removeEmployee={this.removeEmployee}
@@ -29,8 +47,9 @@ class App extends Component {
             key={employee.id}
             name={employee.name}
             image={employee.image}
-            occupation={employee.occupation}
+            title={employee.title}
             department={employee.department}
+            employmentlength={employee.employmentlength}
           />
         ))}
       </Wrapper>
